@@ -85,11 +85,9 @@ def main():
         handle_userinput(user_question)
 
     with st.sidebar:
-        # st.subheader("Your documents")
-        st.subheader('Your documents are:\n 1- Non_linear Dynamics and Chaos with Student Solutions Manual\n 2- Mastering Monero')
-        # pdf_docs = st.file_uploader(
-        #     "Upload your PDFs here and click on 'Process'", accept_multiple_files=True)
-        pdf_docs = ["Monero.pdf", "Physics.pdf"]
+        st.subheader("Your documents")
+        pdf_docs = st.file_uploader(
+            "Upload your PDFs here and click on 'Process'", accept_multiple_files=True)
         if st.button("Process"):
             with st.spinner("Processing"):
                 # get pdf text
