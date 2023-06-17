@@ -315,6 +315,7 @@ SQLAlchemy==1.4.36
 sqlparse==0.4.2
 starlette==0.27.0
 streamlit==1.23.1
+<<<<<<< HEAD
 streamlit-ace==0.1.1
 streamlit-chat==0.0.2.2
 sympy==1.11.1
@@ -384,3 +385,7 @@ zipp==3.8.0
 zope.event==4.5.0
 zope.interface==5.4.0
 zstandard==0.21.0
+=======
+tiktoken
+openai
+>>>>>>> 108184b03783a72c80720ae648fa872647800273
