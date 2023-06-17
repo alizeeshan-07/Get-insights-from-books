@@ -12,6 +12,7 @@ from langchain.llms import HuggingFaceHub
 import os
 
 
+
 def get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
