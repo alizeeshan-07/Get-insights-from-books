@@ -82,17 +82,17 @@ def main():
         st.session_state.chat_history = None
 
     st.header("Stocks Guide:books:")
-    # user_question = st.text_input("Ask a question about the documents or books you uploaded:")
     user_question = st.text_input("Ask a question about the documents or books you uploaded:")
+    # user_question = st.text_input("Ask a question about the documents or books you uploaded:")
     if user_question:
         handle_userinput(user_question)
 
     with st.sidebar:
-        # st.subheader("Your documents")
-        st.subheader('Your documents are:\n 6.1. Financial Glossary July 2023 \n 6.2. Australian Training doc')
-        # pdf_docs = st.file_uploader(
-        #     "Upload your PDFs here and click on 'Process'", accept_multiple_files=True)
-        pdf_docs = ["6.1. Financial Glossary July 2023.pdf", "6.2. Australian Training doc.pdf"]
+        st.subheader("Your documents")
+        # st.subheader('Your documents are:\n 6.1. Financial Glossary July 2023 \n 6.2. Australian Training doc')
+        pdf_docs = st.file_uploader(
+            "Upload your PDFs here and click on 'Process'", accept_multiple_files=True)
+        # pdf_docs = ["6.1. Financial Glossary July 2023.pdf", "6.2. Australian Training doc.pdf"]
         if st.button("Process"):
             with st.spinner("Processing"):
                 # get pdf text
